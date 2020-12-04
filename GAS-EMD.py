@@ -49,17 +49,6 @@ for n, imf in enumerate(IMF):
 
 IMF[1]
 
-model = pf.ARIMA(data=IMF[1], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a1 = model.predict_is(h=500, fit_once=True)
-
 model = pf.GAS(ar=2, sc=2, data=IMF[1], family=pf.Normal())
 
 x = model.fit("MLE")
@@ -70,17 +59,6 @@ model.plot_fit(figsize=(15,10))
 model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g1 = model.predict_is(h=500, fit_once=True)
-
-model = pf.ARIMA(data=IMF[2], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a2 = model.predict_is(h=500, fit_once=True)
 
 model = pf.GAS(ar=2, sc=2, data=IMF[2], family=pf.Normal())
 
@@ -93,17 +71,6 @@ model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g2 = model.predict_is(h=500, fit_once=True)
 
-model = pf.ARIMA(data=IMF[3], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a3 = model.predict_is(h=500, fit_once=True)
-
 model = pf.GAS(ar=2, sc=2, data=IMF[3], family=pf.Normal())
 
 x = model.fit("MLE")
@@ -114,17 +81,6 @@ model.plot_fit(figsize=(15,10))
 model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g3 = model.predict_is(h=500, fit_once=True)
-
-model = pf.ARIMA(data=IMF[4], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a4 = model.predict_is(h=500, fit_once=True)
 
 model = pf.GAS(ar=2, sc=2, data=IMF[4], family=pf.Normal())
 
@@ -137,17 +93,6 @@ model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g4 = model.predict_is(h=500, fit_once=True)
 
-model = pf.ARIMA(data=IMF[5], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a5 = model.predict_is(h=500, fit_once=True)
-
 model = pf.GAS(ar=2, sc=2, data=IMF[5], family=pf.Normal())
 
 x = model.fit("MLE")
@@ -158,17 +103,6 @@ model.plot_fit(figsize=(15,10))
 model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g5 = model.predict_is(h=500, fit_once=True)
-
-model = pf.ARIMA(data=IMF[6], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a6 = model.predict_is(h=500, fit_once=True)
 
 model = pf.GAS(ar=2, sc=2, data=IMF[6], family=pf.Normal())
 
@@ -181,17 +115,6 @@ model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g6 = model.predict_is(h=500, fit_once=True)
 
-model = pf.ARIMA(data=IMF[7], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a7 = model.predict_is(h=500, fit_once=True)
-
 model = pf.GAS(ar=2, sc=2, data=IMF[7], family=pf.Normal())
 
 x = model.fit("MLE")
@@ -202,17 +125,6 @@ model.plot_fit(figsize=(15,10))
 model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g7 = model.predict_is(h=500, fit_once=True)
-
-model = pf.ARIMA(data=IMF[8], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a8 = model.predict_is(h=500, fit_once=True)
 
 model = pf.GAS(ar=2, sc=2, data=IMF[8], family=pf.Normal())
 
@@ -225,17 +137,6 @@ model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g8 = model.predict_is(h=500, fit_once=True)
 
-model = pf.ARIMA(data=IMF[9], ar=4, integ=0, ma=4, target='speed', family=pf.Normal())
-
-x = model.fit("MLE")
-x.summary()
-
-model.plot_fit(figsize=(15,10))
-
-model.plot_predict_is(h=50, figsize=(10,3))
-
-prediction_a9 = model.predict_is(h=500, fit_once=True)
-
 model = pf.GAS(ar=2, sc=2, data=IMF[9], family=pf.Normal())
 
 x = model.fit("MLE")
@@ -247,23 +148,9 @@ model.plot_predict_is(h=50, fit_once=True, figsize=(10,3))
 
 prediction_g9 = model.predict_is(h=500, fit_once=True)
 
-prediction_a=prediction_a1+prediction_a2+prediction_a3+prediction_a4+prediction_a5+prediction_a6+prediction_a7+prediction_a8+prediction_a9
-
-mean_absolute_error(prediction_a,F[-500:])
-np.sqrt(mean_squared_error(prediction_a,F[-500:]))
-r2_score(prediction_a,F[-500:])
-
 prediction_g=prediction_g1+prediction_g2+prediction_g3+prediction_g4+prediction_g5+prediction_g6+prediction_g7+prediction_g8+prediction_g9
 
 mean_absolute_error(prediction_g,F[-500:])
 np.sqrt(mean_squared_error(prediction_g,F[-500:]))
 r2_score(prediction_g,F[-500:])
-
-
-
-
-
-
-
-
 
